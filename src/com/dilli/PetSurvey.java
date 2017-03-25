@@ -23,11 +23,11 @@ public class PetSurvey extends JFrame{
     private boolean fish;
 
     protected PetSurvey(){
-        setContentPane(rootPanel);
-        pack();
-        setSize(new Dimension(350,200));
-        setTitle("Pet Survey");
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setContentPane(rootPanel);//Set the contents of the Window to be the rootPane JPanel
+        pack(); //Add the components to the window
+        setSize(new Dimension(400,350)); //Set size - user will be able to resize
+        setTitle("Pet Survey");  //Set the text in the title bar
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); //Close the program when you close this window.
         setVisible(true);
 
         fishCheckBox.addItemListener(new ItemListener() {
